@@ -14,7 +14,6 @@ export default function reducer(state = initialState, action){
 
 	switch(action.type){
 		case actionType.SELECTED:
-			console.log(state.file.length, action.file.id);
 			if(state.file.length < action.file.id){
 				// 新規追加
 				state.file.push(action.file);
